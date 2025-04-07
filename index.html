@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Future School - Landing Page</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Welcome to the Future of Learning</h1>
+      <p>Empowering young minds through innovation, creativity, and a personalized approach to education.</p>
+      <a href="#feedback" class="cta-button">Enroll Your Child Today</a>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2>Our Unique Approach</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238" alt="Smart Classrooms">
+        <h3>Smart Classrooms</h3>
+        <p>Interactive boards, AI assessments, and tech-integrated curriculum.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1562771247-b43e1c1a8c01" alt="Creative Spaces">
+        <h3>Creative Spaces</h3>
+        <p>Labs for arts, music, robotics, and innovation.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7" alt="Personalized Learning">
+        <h3>Personalized Learning</h3>
+        <p>Tailored learning paths designed by educational AI.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="principal">
+    <img src="principal.jpg" alt="Principal" class="principal-img">
+    <div>
+      <h2>Message from the Principal</h2>
+      <p class="quote">“Our mission is to nurture innovators and leaders through curiosity and compassion.”</p>
+      <p class="name">M. Vineshragul<br>311122106062<br>LICET</p>
+    </div>
+  </section>
+
+  <section class="cta" id="feedback">
+    <h2>We'd love to hear from you!</h2>
+    <form id="feedbackForm">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <textarea id="message" placeholder="Your Comment" required></textarea>
+      <button type="submit">Send Feedback</button>
+    </form>
+    <div id="commentsContainer"></div>
+  </section>
+
+  <!-- Firebase App SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+</body>
+</html>
